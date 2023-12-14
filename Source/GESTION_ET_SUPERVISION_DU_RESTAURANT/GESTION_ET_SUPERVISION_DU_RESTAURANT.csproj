@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contrôleur\" />
+    <Folder Include="Modèle\" />
+    <Folder Include="Ressources\" />
+    <Folder Include="Vue\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
