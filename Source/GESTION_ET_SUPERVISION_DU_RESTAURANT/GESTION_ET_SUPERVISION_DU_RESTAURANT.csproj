@@ -78,7 +78,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contrôleur\" />
-    <Folder Include="Modèle\" />
+    <Folder Include="Modèle\BDD\" />
+    <Folder Include="Modèle\Lieux\" />
+    <Folder Include="Modèle\Matériel\" />
+    <Folder Include="Modèle\Personnes\Cuisine\" />
+    <Folder Include="Modèle\Personnes\Salle\" />
     <Folder Include="Ressources\" />
     <Folder Include="Vue\" />
   </ItemGroup>
