@@ -56,9 +56,12 @@
     <Compile Include="Modèle\Lieux\Restaurant.cs" />
     <Compile Include="Modèle\Lieux\Salle.cs" />
     <Compile Include="Modèle\Lieux\Table.cs" />
+    <Compile Include="Modèle\Personnes\AClient.cs" />
     <Compile Include="Modèle\Personnes\AEmploye.cs" />
     <Compile Include="Modèle\Personnes\EnumsPersonnes.cs" />
+    <Compile Include="Modèle\Personnes\FabriquePersonne.cs" />
     <Compile Include="Modèle\Personnes\Personne.cs" />
+    <Compile Include="Modèle\Personnes\Salle\Client.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -88,7 +91,6 @@
     <Folder Include="Modèle\BDD\" />
     <Folder Include="Modèle\Matériel\" />
     <Folder Include="Modèle\Personnes\Cuisine\" />
-    <Folder Include="Modèle\Personnes\Salle\" />
     <Folder Include="Ressources\" />
     <Folder Include="Vue\" />
   </ItemGroup>
