@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes
 {
-    public abstract class AEmploye : Personne
+    public abstract class Personne
     {
-        public Roles Role { get; set; }
-
-        public void Start()
-        {
-
-        }
+        public string Nom { get; set; }
+        public int PosX { get; set; } = 0;
+        public int PosY { get; set; } = 0;
     }
 }

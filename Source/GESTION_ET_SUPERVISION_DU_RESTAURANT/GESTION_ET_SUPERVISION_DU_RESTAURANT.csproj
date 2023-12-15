@@ -57,6 +57,8 @@
     <Compile Include="Modèle\Lieux\Salle.cs" />
     <Compile Include="Modèle\Lieux\Table.cs" />
     <Compile Include="Modèle\Personnes\AEmploye.cs" />
+    <Compile Include="Modèle\Personnes\EnumsPersonnes.cs" />
+    <Compile Include="Modèle\Personnes\Personne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
