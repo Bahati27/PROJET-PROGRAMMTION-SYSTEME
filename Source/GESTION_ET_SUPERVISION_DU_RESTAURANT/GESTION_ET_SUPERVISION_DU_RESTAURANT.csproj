@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Modèle\Lieux\Cuisine.cs" />
     <Compile Include="Modèle\Lieux\Restaurant.cs" />
+    <Compile Include="Modèle\Lieux\Salle.cs" />
+    <Compile Include="Modèle\Lieux\Table.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
