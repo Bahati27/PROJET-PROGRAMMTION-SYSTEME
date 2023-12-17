@@ -13,10 +13,11 @@ namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
         {
             // Arrange
             string categorie = "Plat";
-            List<string> recettesAttendues = new List<string> { "Burger Vegan", "Steak Frites" };
+            List<string> recettesAttendues = new List<string> { "Burger Vegan", "Steak Frites" }
 
             // Act
-            List<string> recettes = getRecette(categorie);
+            BDD bdd = new BDD();
+            List<string> recettes = bdd.getRecette(categorie);
 
             // Assert
             CollectionAssert.AreEqual(recettesAttendues, recettes);
@@ -28,7 +29,8 @@ namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
             string nomRecettte = "Burger Vegan";
             int prixAttendu = 26;
 
-            int prix = getPrice(nomRecettte);
+            BDD bdd = new BDD();
+            int prix = bdd.getPrice(nomRecettte);
 
             Assert.AreEqual(prixAttendu, prix);
         }
@@ -39,7 +41,8 @@ namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
             string nomRecettte = "Burger Vegan";
             List<string> etapesAttendues = new List<string> { "Cuire", "Preparation" };
 
-            List<string> etapes = getEtape(nomRecettte);
+            BDD bdd = new BDD();
+            List<string> etapes = bdd.getEtape(nomRecettte);
 
             CollectionAssert.AreEqual(etapesAttendues, etapes);
         }
@@ -49,7 +52,8 @@ namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
         {
             string categorie = "Sortie";
 
-            List<string> recettes = getRecette(categorie);
+            BDD bdd = new BDD();
+            List<string> recettes = bdd.getRecette(categorie);
 
             Assert.AreEqual(0, recettes.Count);
         }
