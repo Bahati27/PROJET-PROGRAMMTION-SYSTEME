@@ -61,6 +61,10 @@
     <Compile Include="Modèle\Lieux\Table.cs" />
     <Compile Include="Modèle\Personnes\AClient.cs" />
     <Compile Include="Modèle\Personnes\AEmploye.cs" />
+    <Compile Include="Modèle\Personnes\Cuisine\ChefDeCuisine.cs" />
+    <Compile Include="Modèle\Personnes\Cuisine\CommisDeCuisine.cs" />
+    <Compile Include="Modèle\Personnes\Cuisine\Cuisiner.cs" />
+    <Compile Include="Modèle\Personnes\Cuisine\Plongeur.cs" />
     <Compile Include="Modèle\Personnes\EnumsPersonnes.cs" />
     <Compile Include="Modèle\Personnes\FabriquePersonne.cs" />
     <Compile Include="Modèle\Personnes\Personne.cs" />
@@ -92,7 +96,6 @@
   <ItemGroup>
     <Folder Include="Contrôleur\" />
     <Folder Include="Modèle\Matériel\" />
-    <Folder Include="Modèle\Personnes\Cuisine\" />
     <Folder Include="Ressources\" />
     <Folder Include="Vue\" />
   </ItemGroup>
