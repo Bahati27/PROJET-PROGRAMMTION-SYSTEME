@@ -2,7 +2,7 @@
 using System;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Lieux;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes.Salle;
-
+using System.Collections.Generic;
 
 namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
 {
