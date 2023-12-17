@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace Common
+namespace DialogBox
 {
     public static class SettingsReader
     {
