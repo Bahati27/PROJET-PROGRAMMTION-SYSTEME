@@ -52,6 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modèle\BDD\BDD.cs" />
+    <Compile Include="Modèle\BDD\IBDD.cs" />
     <Compile Include="Modèle\Lieux\Cuisine.cs" />
     <Compile Include="Modèle\Lieux\Restaurant.cs" />
     <Compile Include="Modèle\Lieux\Salle.cs" />
@@ -88,7 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contrôleur\" />
-    <Folder Include="Modèle\BDD\" />
     <Folder Include="Modèle\Matériel\" />
     <Folder Include="Modèle\Personnes\Cuisine\" />
     <Folder Include="Ressources\" />
