@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD;
 
 namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
 {
