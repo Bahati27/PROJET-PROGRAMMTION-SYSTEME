@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes;
 
+
 namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Lieux
 {
     public class Cuisine
