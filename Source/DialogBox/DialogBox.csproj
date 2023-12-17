@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4D5C1D1-470F-4236-BC71-F54FD1265622}</ProjectGuid>
+    <ProjectGuid>{6B0EC4D6-5C7F-4529-A2CE-32C6CB847EDD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GESTION_ET_SUPERVISION_DU_RESTAURANT</RootNamespace>
-    <AssemblyName>GESTION_ET_SUPERVISION_DU_RESTAURANT</AssemblyName>
+    <RootNamespace>DialogBox</RootNamespace>
+    <AssemblyName>DialogBox</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,35 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contrôleur\InputManager.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modèle\BDD\BDD.cs" />
-    <Compile Include="Modèle\BDD\BDDControleur.cs" />
-    <Compile Include="Modèle\BDD\IBDD.cs" />
-    <Compile Include="Modèle\Lieux\Cuisine.cs" />
-    <Compile Include="Modèle\Lieux\Restaurant.cs" />
-    <Compile Include="Modèle\Lieux\Salle.cs" />
-    <Compile Include="Modèle\Lieux\Table.cs" />
-    <Compile Include="Modèle\Personnes\AClient.cs" />
-    <Compile Include="Modèle\Personnes\AEmploye.cs" />
-    <Compile Include="Modèle\Personnes\Cuisine\ChefDeCuisine.cs" />
-    <Compile Include="Modèle\Personnes\Cuisine\CommisDeCuisine.cs" />
-    <Compile Include="Modèle\Personnes\Cuisine\Cuisiner.cs" />
-    <Compile Include="Modèle\Personnes\Cuisine\Plongeur.cs" />
-    <Compile Include="Modèle\Personnes\EnumsPersonnes.cs" />
-    <Compile Include="Modèle\Personnes\FabriquePersonne.cs" />
-    <Compile Include="Modèle\Personnes\Personne.cs" />
-    <Compile Include="Modèle\Personnes\Salle\ChefDeRang.cs" />
-    <Compile Include="Modèle\Personnes\Salle\Client.cs" />
-    <Compile Include="Modèle\Personnes\Salle\CommisDeSalle.cs" />
-    <Compile Include="Modèle\Personnes\Salle\MaitreDHotel.cs" />
-    <Compile Include="Modèle\Personnes\Salle\Serveur.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="SettingsReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,17 +70,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modèle\Matériel\" />
-    <Folder Include="Ressources\" />
-    <Folder Include="Vue\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DialogBox\DialogBox.csproj">
-      <Project>{6b0ec4d6-5c7f-4529-a2ce-32c6cb847edd}</Project>
-      <Name>DialogBox</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
