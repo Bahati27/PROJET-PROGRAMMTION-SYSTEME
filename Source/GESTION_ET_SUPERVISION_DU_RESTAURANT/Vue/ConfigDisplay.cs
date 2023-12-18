@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GESTION_ET_SUPERVISION_DU_RESTAURANT
+namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Vue
 {
-    public partial class Form1 : Form
+    public partial class ConfigDisplay : Form
     {
-        public Form1()
+        public ConfigDisplay()
         {
             InitializeComponent();
         }
