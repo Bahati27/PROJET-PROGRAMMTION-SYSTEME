@@ -1,4 +1,5 @@
-﻿using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes;
+﻿using DialogBox;
+using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes.Salle;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,5 @@
 ﻿using DialogBox;
+using GESTION_ET_SUPERVISION_DU_RESTAURANT.Vue;
 using System;
 using System.Collections.Generic;
 using System.Linq;

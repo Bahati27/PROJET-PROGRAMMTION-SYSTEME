@@ -35,5 +35,12 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_Start;
+        private System.Windows.Forms.TextBox txtBox_Inspection;
+        private System.Windows.Forms.Button btn_Config;
+        private System.Windows.Forms.TextBox txtBox_Console;
+        private System.Windows.Forms.Button btn_Pause;
     }
 }

@@ -104,15 +104,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modèle\Matériel\" />
-    <Folder Include="Ressources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DialogBox\DialogBox.csproj">
       <Project>{6b0ec4d6-5c7f-4529-a2ce-32c6cb847edd}</Project>
       <Name>DialogBox</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Chaise.png" />
+    <Content Include="Resources\ChefDeCuisine.png" />
+    <Content Include="Resources\ChefDeRang.png" />
+    <Content Include="Resources\Client.bmp" />
+    <Content Include="Resources\Client.png" />
+    <Content Include="Resources\CommisDeCuisine.png" />
+    <Content Include="Resources\CommisDeSalle.png" />
+    <Content Include="Resources\Cuisinier.png" />
+    <Content Include="Resources\MaitreDHotel.png" />
+    <Content Include="Resources\Plongeur.png" />
+    <Content Include="Resources\Serveur.png" />
+    <Content Include="Resources\Table.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
