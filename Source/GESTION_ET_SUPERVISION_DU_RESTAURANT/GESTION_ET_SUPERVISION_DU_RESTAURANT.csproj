@@ -54,6 +54,7 @@
     <Compile Include="Modèle\Lieux\Restaurant.cs" />
     <Compile Include="Modèle\Lieux\Salle.cs" />
     <Compile Include="Modèle\Lieux\Table.cs" />
+    <Compile Include="Modèle\Materiel\StockManager.cs" />
     <Compile Include="Modèle\Personnes\AClient.cs" />
     <Compile Include="Modèle\Personnes\AEmploye.cs" />
     <Compile Include="Modèle\Personnes\Cuisine\ChefDeCuisine.cs" />
@@ -91,6 +92,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vue\ConfigDisplay.resx">
+      <DependentUpon>ConfigDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\RestaurantDisplay.resx">
+      <DependentUpon>RestaurantDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
