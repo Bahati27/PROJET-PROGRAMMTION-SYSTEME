@@ -21,7 +21,7 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vue.RestaurantDisplay());
+            Application.Run(new Vue.RestaurantDisplay()); 
 
             /*IBDD setReservation = new BDD();
             setReservation.updateStock("Endive aux Noix");*/

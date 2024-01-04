@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DialogBox;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes.Salle;
 using GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes.Cuisine;
+using DialogBox;
 
 namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Vue
 {
@@ -19,7 +19,7 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Vue
     {
         private int SPRITE_SIZE = Int32.Parse(SettingsReader.ReadSettings("SpriteSize"));
         private Restaurant restaurant;
-
+ 
         private object[,] Map { get; } = new object[22, 9];
 
         private bool TableDisplayed { get; set; }
