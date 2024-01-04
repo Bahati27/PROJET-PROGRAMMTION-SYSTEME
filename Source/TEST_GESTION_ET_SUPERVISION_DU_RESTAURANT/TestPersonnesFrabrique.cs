@@ -10,19 +10,13 @@ namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
     public class TestPersonnesFrabrique
     {
         private FabriquePersonne _fabrique;
-
-        public TestPersonnesFabrique()
-        {
-            _fabrique = new FabriquePersonne();
-            Assert.IsNotNull(_fabrique);
-        }
-
-
         [TestMethod]
         public void PersonneFactory()
         {
             //Object[] paramCli = { "Test", Caractere.Lent, Gouts.Salé, true,  };
             //Object[] paramEmp = { "Jacque" };
+            _fabrique = new FabriquePersonne();
+
             var VchefDeCuisine = Roles.ChefDeCuisine;
             var Vclient = Caractere.Lent;
 

@@ -13,7 +13,7 @@ namespace TEST_GESTION_ET_SUPERVISION_DU_RESTAURANT
         {
             // Arrange
             string categorie = "Plat";
-            List<string> recettesAttendues = new List<string> { "Burger Vegan", "Steak Frites" }
+            List<string> recettesAttendues = new List<string> { "Burger Vegan", "Steak Frites" };
 
             // Act
             BDD bdd = new BDD();
