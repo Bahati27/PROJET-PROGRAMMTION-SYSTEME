@@ -8,7 +8,7 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
 {
     class BDDControleur
     {
-        IBDD Bdd = new BDD();
+        IBDD Bdd = BDD.GetInstance();
 
         public void getReservation()
         {

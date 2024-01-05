@@ -25,7 +25,7 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes.Salle
                         if (table.Clients.Count == 0)
                         {
                             table.AddClient(clients);
-                            salle.Restaurant.CallConsole(String.Format("Le maitre d'hôtel à installé les {0} clients à la table ({1},{2})", clients.Count, table.PosX, table.PosY));
+                            salle.Restaurant.CallConsole(String.Format("Le chef de rang à installé les {0} clients à la table ({1},{2})", clients.Count, table.PosX, table.PosY));
                             return;
                         }
                     }

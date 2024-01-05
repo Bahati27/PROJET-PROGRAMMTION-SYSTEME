@@ -10,15 +10,38 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
 {
     public class BDD : IBDD
     {
+        private static BDD instance;
+        private string connectionString;
+
+        private BDD()
+        {
+            connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+        }
+
+        public static BDD GetInstance()
+        {
+            if (instance == null)
+            {
+                lock (typeof(BDD))
+                {
+                    if (instance == null)
+                    {
+                        instance = new BDD();
+                    }
+                }
+            }
+            return instance;
+        }
+
         /// <summary>
         /// Get Recette de la base de données
         /// </summary>
         public List<string> getRecette(string categorie)
         {
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+            
             List<string> recettes = new List<string>();
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand("SELECT * FROM dbo.Recette WHERE Categorie = @Cate", connexion);
                 command.Parameters.AddWithValue("@Cate", categorie);
@@ -53,9 +76,9 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
         {
             int prix = 0;
 
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand("SELECT Prix FROM dbo.Recette WHERE Nom = @NomRecette", connexion);
                 command.Parameters.AddWithValue("@NomRecette", recette);
@@ -84,9 +107,9 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
         /// </summary>
         public void getReservation()
         {
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+           
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand("SELECT * FROM dbo.ReservationTable", connexion);
 
@@ -117,9 +140,9 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
         /// </summary>
         public void setReservation(string Nom, int nbPersonne, int heure)
         {
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+            
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand("INSERT INTO dbo.ReservationTable (NomReservation,NbPersonne,Horaire) " +
                     "VALUES (@nomClient,@nombre,@horaire)", connexion);
@@ -148,9 +171,9 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
         /// <param name="quantite">Nombre de la recette commander</param>
         public void updateStock(string recette, int quantite = 1)
         {
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+            
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 Dictionary<string, int> valeur = new Dictionary<string, int>();
 
@@ -181,9 +204,9 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
         /// </summary>
         public void reStock()
         {
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+            
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 Dictionary<string, int> valeur = new Dictionary<string, int>();
                 int valeurStock = 40;
@@ -217,9 +240,9 @@ namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.BDD
         /// <param name="Recette">Recette ou l'on veut avoir les etapes</param>
         public List<string> getEtape(string Recette)
         {
-            string connectionString = "Data Source=(local);Initial Catalog=RestaurantManagerBDD;Integrated Security=true";
+            
 
-            using (SqlConnection connexion = new SqlConnection(connectionString))
+            using (SqlConnection connexion = new SqlConnection(this.connectionString))
             {
                 SqlCommand command = new SqlCommand("SELECT * FROM dbo.EtapeRecette WHERE NomRecette = @Recette ORDER BY NbEtape DESC", connexion);
                 command.Parameters.AddWithValue("@Recette", Recette);

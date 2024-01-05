@@ -50,11 +50,15 @@
     <Compile Include="Modèle\BDD\BDD.cs" />
     <Compile Include="Modèle\BDD\BDDControleur.cs" />
     <Compile Include="Modèle\BDD\IBDD.cs" />
+    <Compile Include="Modèle\CommandContext.cs" />
     <Compile Include="Modèle\Lieux\Cuisine.cs" />
     <Compile Include="Modèle\Lieux\Restaurant.cs" />
     <Compile Include="Modèle\Lieux\Salle.cs" />
     <Compile Include="Modèle\Lieux\Table.cs" />
     <Compile Include="Modèle\Materiel\StockManager.cs" />
+    <Compile Include="Modèle\OrderAll.cs" />
+    <Compile Include="Modèle\OrderByStep.cs" />
+    <Compile Include="Modèle\OrderStrategy.cs" />
     <Compile Include="Modèle\Personnes\AClient.cs" />
     <Compile Include="Modèle\Personnes\AEmploye.cs" />
     <Compile Include="Modèle\Personnes\Cuisine\ChefDeCuisine.cs" />
