@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace GESTION_ET_SUPERVISION_DU_RESTAURANT.Modèle.Personnes
 {
-    public abstract class Personne
+    public interface IMovable
     {
-        public string Nom { get; set; }
-        public int PosX { get; set; } = 0;
-        public int PosY { get; set; } = 0;
+        void avancer();
+        void reculer();
+        void lateral();
+        void noMobile();
 
-        private IMovable moveBehavior;
     }
 }
